@@ -61,3 +61,5 @@ typings/
 .next
  homework_instructions.md
 homework_instructions.md
+package-lock.json
+.gitignore
