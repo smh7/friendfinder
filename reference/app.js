@@ -33,38 +33,6 @@ var connection = mysql.createConnection({
 });
 
 
-app.use((req, res, next) => {
-  var now = new Date().toString();
-  var log = `${now}: ${req.method} ${req.url}`;
-  console.log(log);
-  fs.appendFile('server.log', log + '\n', (err) => {
-    if (err) {
-      console.log('Unable to append to server.log.')
-    }
-  });
-
-  next();
-});
-
-app.get('/', function (req, res) {
-  var obj = {};
-
-  let query = connection.query('SELECT * FROM products order by department_name ASC, lifetime_sold DESC', function (err, result) {
-
-    if (err) {
-      throw err;
-    } else {
-      obj = {
-        print: result
-      };
-      console.log(obj);
-      res.render('products', obj);
-
-    }
-  });
-
-});
-
 app.get("/add", (req, results) => {
   var q = "SELECT COUNT(*) AS count FROM products";
   connection.query(q, function (err, res) {
