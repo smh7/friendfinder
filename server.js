@@ -39,7 +39,7 @@ app.get('/', function (req, res) {
 // Added code for form testing this is the simplified form
 app.get('/form', function (req, res) {
 
-  res.render('addtst');
+  res.render('addinput');
 
 });
   var sampleInput = {
