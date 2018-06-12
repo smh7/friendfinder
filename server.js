@@ -35,6 +35,13 @@ app.get('/', function (req, res) {
       res.render('add');
 
     });
+
+// Added code for form testing this is the simplified form
+app.get('/form', function (req, res) {
+
+  res.render('addtst');
+
+});
   var sampleInput = {
     "name": "Ahmed",
     "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
@@ -46,6 +53,20 @@ app.get('/test', function (req, res) {
   };
   // res.json(obj);
   res.render('matches', obj)
+
+});
+
+
+
+app.post('/matchup', function (req, res) {
+  obj = {
+    print: friendsData
+  };
+  obj2 = {
+    print2: req
+  };
+  res.send(req.body);
+  // res.render('matches', obj)
 
 });
 
