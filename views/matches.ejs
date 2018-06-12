@@ -1,0 +1,50 @@
+<% include partials/header %>
+    <header>
+        <h1 class="display-3 text-center my-4">Your Matches</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+                <table id="table" class="table" >  
+                        <thead>  
+                            <tr>
+                                <th scope="col">Image</th>                                
+                                <th scope="col">Name</th>  
+                                <th scope="col">Answers</th>  
+                                <th scope="col">Difference</th>  
+                                
+                            </tr>  
+                        </thead>  
+                         <tbody>  
+                         <% print.forEach(function (print) { %>
+                            <tr scope = "row">  
+                                <td><img src=<%= print.photo %> alt="W3Schools.com"  width="128" height="128"></td>                                
+                                <td><%= print.name %></td>  
+                                <td><%= print.scores %></td>   
+                            </tr>                                   
+                         <% }) %>
+                         </tbody>
+                    </table>
+
+        </div>
+        <div class="row" id="product-cards">
+                <% print.forEach(function (print) { %>
+
+                <div class="card m-3 bg-light" style="width: 18rem;">
+                        <img class="card-img-top" src=<%= print.photo %> alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title"><%= print.name %></h5>
+                          <p class="card-text"><%= print.scores %></p>
+                        </div>
+                        <ul class="list-group list-group-flush bg-light">
+                          <li class="list-group-item bg-light">other thing</li>
+                          <li class="list-group-item bg-light">other, other thing</li>
+                        </ul>
+                        <div class="card-body">
+                        </div>
+                      </div>
+                    <% }) %>
+                      
+
+        </div>
+    </div>
+    <% include partials/footer %>
