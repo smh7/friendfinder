@@ -1,0 +1,32 @@
+<% include partials/header %>
+  <div class="container">
+    <div>
+
+        <h1 class="display-4 my-4">Survey Questions
+        </h1>
+        </div>
+            <h2 class="my-3">About You</h2>
+            <form id="user-input-form" name="name-insert" action="/matchup" method="POST">
+              <div class="form-group">
+                <label for="InputProductName">Name (Required)</label>
+                <input type="text" id="prod-name-input" class="form-control" name="name">
+              </div>
+
+              <div>
+                <label for="artis">Link to Photo Image (Required)
+              </label>
+                <input type="text" id="image-url-input" class="form-control" name="image_url">
+              </div>
+              <input type="submit" value="Submit" class="btn btn-success">
+            </form>
+
+         </div>
+   
+
+    </div>
+
+  </div>
+  <% include partials/footer %>
+
+
+
