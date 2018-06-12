@@ -1,58 +1,203 @@
 <% include partials/header %>
   <div class="container">
     <div>
-              <h1 class="display-4 text-center my-4">Current Number of Distinct Products</h1>
-  <br>
- </div>
-  <br><br>
-    <h4 class="my-3">Add Product</h4>
-    <form id="product-input-form" name="product-insert" action="/added" method="POST">
-      <div class="form-group">
-        <label for="InputProductName">Product Name</label>
-        <input type="text" id="prod-name-input" class="form-control" name="product_name">
-      </div>
 
-      <div>
-        <label for="artis">Image_URL please use format 'img src='/tops.jpg'</label>
-        <input type="text" id="image-url-input" class="form-control" name="image_url">
-      </div>
+        <h1 class="display-4 my-4">Survey Questions
+        </h1>
+        </div>
+            <h2 class="my-3">About You</h2>
+            <form id="user-input-form" name="name-insert" action="/added" method="POST">
+              <div class="form-group">
+                <label for="InputProductName">Name (Required)</label>
+                <input type="text" id="prod-name-input" class="form-control" name="product_name">
+              </div>
 
-      <div>
-        <label for="artis">Product Desc</label>
-        <input type="text" id="prod-desc-input" class="form-control" name="product_desc">
-      </div>
-
-      <div>
-        <label for="score">Dept.</label>
-        <input type="text" id="dept-input" class="form-control" name="department_name">
-      </div>
-
-      <div>
-        <label for="qty">instock quantity</label>
-        <input type="text" id="genre-input" class="form-control" name="instock_quantity">
-      </div>
-
-      <div>
-        <label for="price">Consumer Price</label>
-        <input type="text" id="consumer_price" class="form-control" name="consumer_price">
-      </div>
-
-      <div>
-        <label for="price">Business Cost</label>
-        <input type="text" id="business_cost" class="form-control" name="business_cost">
-      </div>
-
-      <div>
-        <label for="price">Lifetime Sold</label>
-        <input type="text" id="lifetime_sold" class="form-control" name="lifetime_sold">
-      </div>
-
-      <div>
-        <input type="submit" value="Submit" class="btn btn-primary my-2">
-      </div>
-
+              <div>
+                <label for="artis">Link to Photo Image (Required)
+              </label>
+                <input type="text" id="image-url-input" class="form-control" name="image_url">
+              </div>
     </form>
+      <div>
+        <label for="artis"><br><h3>Question 1.</h3>Your mind is always buzzing with unexplored ideas and plans.</label>
+  
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">1. (Strongly Agree)</a>
+          <a class="dropdown-item" href="#">2.</a>
+          <a class="dropdown-item" href="#">3. (I am indifferent)</a>
+          <a class="dropdown-item" href="#">4. </a>
+          <a class="dropdown-item" href="#">5. (Strongly Disagree)</a>
+        </div>
+      </div>
+      </div>
 
+
+           <div>
+        <label for="artis"><br><h3>Question 2.</h3>Generally speaking, you rely more on your experience than your imagination.
+.</label>
+  
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">1. (Strongly Agree)</a>
+          <a class="dropdown-item" href="#">2.</a>
+          <a class="dropdown-item" href="#">3. (I am indifferent)</a>
+          <a class="dropdown-item" href="#">4. </a>
+          <a class="dropdown-item" href="#">5. (Strongly Disagree)</a>
+        </div>
+      </div>
+      </div>
+
+
+           <div>
+        <label for="artis"><br><h3>Question 3.</h3>You find it easy to stay relaxed and focused even when there is some pressure.
+.</label>
+  
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">1. (Strongly Agree)</a>
+          <a class="dropdown-item" href="#">2.</a>
+          <a class="dropdown-item" href="#">3. (I am indifferent)</a>
+          <a class="dropdown-item" href="#">4. </a>
+          <a class="dropdown-item" href="#">5. (Strongly Disagree)</a>
+        </div>
+      </div>
+      </div>
+
+
+           <div>
+        <label for="artis"><br><h3>Question 4.</h3>You rarely do something just out of sheer curiosity.</label>
+  
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">1. (Strongly Agree)</a>
+          <a class="dropdown-item" href="#">2.</a>
+          <a class="dropdown-item" href="#">3. (I am indifferent)</a>
+          <a class="dropdown-item" href="#">4. </a>
+          <a class="dropdown-item" href="#">5. (Strongly Disagree)</a>
+        </div>
+      </div>
+      </div>
+
+
+           <div>
+        <label for="artis"><br><h3>Question 5.</h3>People can rarely upset you.</label>
+  
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">1. (Strongly Agree)</a>
+          <a class="dropdown-item" href="#">2.</a>
+          <a class="dropdown-item" href="#">3. (I am indifferent)</a>
+          <a class="dropdown-item" href="#">4. </a>
+          <a class="dropdown-item" href="#">5. (Strongly Disagree)</a>
+        </div>
+      </div>
+      </div>
+
+
+           <div>
+        <label for="artis"><br><h3>Question 6.</h3>It is often difficult for you to relate to other people’s feelings.
+</label>
+  
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">1. (Strongly Agree)</a>
+          <a class="dropdown-item" href="#">2.</a>
+          <a class="dropdown-item" href="#">3. (I am indifferent)</a>
+          <a class="dropdown-item" href="#">4. </a>
+          <a class="dropdown-item" href="#">5. (Strongly Disagree)</a>
+        </div>
+      </div>
+      </div>
+
+
+           <div>
+        <label for="artis"><br><h3>Question 7.</h3>In a discussion, truth should be more important than people’s sensitivities.</label>
+  
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">1. (Strongly Agree)</a>
+          <a class="dropdown-item" href="#">2.</a>
+          <a class="dropdown-item" href="#">3. (I am indifferent)</a>
+          <a class="dropdown-item" href="#">4. </a>
+          <a class="dropdown-item" href="#">5. (Strongly Disagree)</a>
+        </div>
+      </div>
+      </div>
+
+       <div>
+        <label for="artis"><br><h3>Question 8.</h3>You rarely get carried away by fantasies and ideas.</label>
+  
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">1. (Strongly Agree)</a>
+          <a class="dropdown-item" href="#">2.</a>
+          <a class="dropdown-item" href="#">3. (I am indifferent)</a>
+          <a class="dropdown-item" href="#">4. </a>
+          <a class="dropdown-item" href="#">5. (Strongly Disagree)</a>
+        </div>
+      </div>
+      </div>
+
+
+       <div>
+        <label for="artis"><br><h3>Question 9.</h3>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+  
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">1. (Strongly Agree)</a>
+          <a class="dropdown-item" href="#">2.</a>
+          <a class="dropdown-item" href="#">3. (I am indifferent)</a>
+          <a class="dropdown-item" href="#">4. </a>
+          <a class="dropdown-item" href="#">5. (Strongly Disagree)</a>
+        </div>
+      </div>
+      </div>
+      
+ <div>
+        <label for="artis"><br><h3>Question 10.</h3>You feel more energetic after spending time with a group of people.
+        </label>
+  
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">1. (Strongly Agree)</a>
+          <a class="dropdown-item" href="#">2.</a>
+          <a class="dropdown-item" href="#">3. (I am indifferent)</a>
+          <a class="dropdown-item" href="#">4. </a>
+          <a class="dropdown-item" href="#">5. (Strongly Disagree)</a>
+        </div>
+      </div>
+      </div>
 
 
 
