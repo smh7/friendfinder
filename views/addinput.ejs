@@ -5,8 +5,10 @@
         <h1 class="display-4 my-4">Survey Questions
         </h1>
         </div>
+
             <h2 class="my-3">About You</h2>
             <form id="user-input-form" name="name-insert" action="/matchup" method="POST">
+
               <div class="form-group">
                 <label for="InputProductName">Name (Required)</label>
                 <input type="text" id="prod-name-input" class="form-control" name="name">
@@ -17,92 +19,70 @@
               </label>
                 <input type="text" id="image-url-input" class="form-control" name="photo">
               </div>
-   
+
+            <div>
+              <h2 class="display-5 my-2">Please Answer on a scale of 1 to 5 (most like you to least like you)
+              </h2>
+            </div>
+            
       <div>
         <label for="artis"><br><h3>Question 1.</h3>Your mind is always buzzing with unexplored ideas and plans.</label>
-  
-                <input type="text" id="image-url-input" class="form-control" name="q1">
-              </div>
+        <input type="number" id="q1" class="form-control" name="q1" size="1">
       </div>
 
-
-           <div>
-        <label for="artis"><br><h3>Question 2.</h3>Generally speaking, you rely more on your experience than your imagination.
-.</label>
-  
-   <input type="text" id="image-url-input" class="form-control" name="q2">
-              </div>
+      <div>
+        <label for="artis"><br><h3>Question 2.</h3>Generally speaking, you rely more on your experience than your imagination.</label>
+        <input type="number" id="q2" class="form-control" name="q2" size="1">
       </div>
 
-
-           <div>
-        <label for="artis"><br><h3>Question 3.</h3>You find it easy to stay relaxed and focused even when there is some pressure.
-.</label>
-  
-         <input type="text" id="image-url-input" class="form-control" name="q3">
-              </div>
+      <div>
+        <label for="artis"><br><h3>Question 3.</h3>You find it easy to stay relaxed and focused even when there is some pressure.</label>
+        <input type="number" id="q3" class="form-control" name="q3" size="1">
       </div>
-
-
-           <div>
+           
+      <div>
         <label for="artis"><br><h3>Question 4.</h3>You rarely do something just out of sheer curiosity.</label>
-    <input type="text" id="image-url-input" class="form-control" name="q4">
-              </div>
+        <input type="number" id="q4" class="form-control" name="q4" size="1">
       </div>
-
-
-           <div>
+      
+      <div>
         <label for="artis"><br><h3>Question 5.</h3>People can rarely upset you.</label>
-  
-   <input type="text" id="image-url-input" class="form-control" name="q5">
-              </div>
+        <input type="number" id="q5" class="form-control" name="q5" size="1">
       </div>
 
 
-           <div>
-        <label for="artis"><br><h3>Question 6.</h3>It is often difficult for you to relate to other people’s feelings.
-</label>
-  
-   <input type="text" id="image-url-input" class="form-control" name="q6">
-              </div>
+      <div>
+        <label for="artis"><br><h3>Question 6.</h3>It is often difficult for you to relate to other people’s feelings.</label>
+        <input type="number" id="q6" class="form-control" name="q6" size="1">
       </div>
-
-
-           <div>
+ 
+      <div>
         <label for="artis"><br><h3>Question 7.</h3>In a discussion, truth should be more important than people’s sensitivities.</label>
-  
-   <input type="text" id="image-url-input" class="form-control" name="q7">
-              </div>
+        <input type="number" id="q7" class="form-control" name="q7" size="1">
       </div>
 
        <div>
         <label for="artis"><br><h3>Question 8.</h3>You rarely get carried away by fantasies and ideas.</label>
-  
-   <input type="text" id="image-url-input" class="form-control" name="q8">
-              </div>
+         <input type="number" id="q8" class="form-control" name="q8" size="1">
       </div>
-
 
        <div>
         <label for="artis"><br><h3>Question 9.</h3>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
-  
-   <input type="text" id="image-url-input" class="form-control" name="q9">
-              </div>
+         <input type="number" id="q9" class="form-control" name="q9" size="1">
       </div>
       
- <div>
-        <label for="artis"><br><h3>Question 10.</h3>You feel more energetic after spending time with a group of people.
-        </label>
-   <input type="text" id="image-url-input" class="form-control" name="q10">
-              </div>
+       <div>
+        <label for="artis"><br><h3>Question 10.</h3>You feel more energetic after spending time with a group of people.</label>
+        <input type="number" id="q10" class="form-control" name="q10" size="1">
       </div>
 
       <div>
-      <input type="submit" value="Submit" class="u-full-width">
-    </div>
+        <input type="submit" value="Submit" class="u-full-width">
+      </div>
 
-  </div>
+  
   </form>
+  </div>
   <% include partials/footer %>
 
 

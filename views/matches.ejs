@@ -19,7 +19,9 @@
                             <tr scope = "row">  
                                 <td><img src=<%= print.photo %> alt="W3Schools.com"  width="128" height="128"></td>                                
                                 <td><%= print.name %></td>  
-                                <td><%= print.scores %></td>   
+                                <td><%= print.scores %></td>  
+                                <td><%= print.match %></td>   
+
                             </tr>                                   
                          <% }) %>
                          </tbody>
@@ -36,8 +38,8 @@
                           <p class="card-text"><%= print.scores %></p>
                         </div>
                         <ul class="list-group list-group-flush bg-light">
-                          <li class="list-group-item bg-light">other thing</li>
-                          <li class="list-group-item bg-light">other, other thing</li>
+                          <li class="list-group-item bg-light"><%= print.match %></li>
+                          <li class="list-group-item bg-light">Amazing</li>
                         </ul>
                         <div class="card-body">
                         </div>
